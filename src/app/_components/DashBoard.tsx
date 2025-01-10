@@ -18,7 +18,17 @@ const DashBoard = () => {
         ) : (
             <div>
                 <h1>Not Signed In</h1>
-                <button onClick={()=>signIn("github")}>Sign In</button>
+                <br/>
+                <button onClick={()=>signIn("github")}>Sign In with Github</button>
+                <br/>
+                <button onClick={()=>signIn("google")}>Sign In with Google</button>
+                <br/>
+                <button onClick={()=>
+                signIn("credentials", {
+                  "email":'jsmith',
+                  "password":"securepassword123",
+                })
+                }>Sign In with Creds</button>
             </div>
         )
     }

@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
-import DashBoard from "./components/DashBoard";
-import SessionWrapper from "./components/SessionWrapper";
+
+import DashBoard from "./_components/DashBoard";
+import SessionWrapper from "./_components/SessionWrapper";
 
 export default function Home() {
   return (
